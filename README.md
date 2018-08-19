@@ -52,7 +52,7 @@ The dependency management is handled with RequireJS on runtime.
 
 ## Running
 
-1. In one terminal, start the fragments servers with `npm run start-fragments`
+1. In one terminal, start the fragments servers with `npm run start-fragments` - then you'll have header anf dashboard running on 8090 and 8091 localhost ports respectively.
 1. In another terminal, start the Tailor service with `npm start`
 1. Navigate to `http://localhost:8080`
 
