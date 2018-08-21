@@ -4,7 +4,7 @@
   "description": "mosaic-tailor-vuejs-example",
   "main": "index.js",
   "scripts": {
-    "start": "node tailor.js",
+    "start": "npm run start-fragments & node tailor.js",
     "install-fragment-dependencies": "lerna bootstrap",
     "build-fragments": "lerna run build",
     "start-fragments": "lerna run --parallel start",
