@@ -6,14 +6,6 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
-    output: {
-      library: 'dashboard-fragment',
-      libraryTarget: 'amd',
-      filename: 'dashboard.js',
-      auxiliaryComment: 'Test Comment'
-    },
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
