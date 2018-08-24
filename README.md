@@ -1,6 +1,6 @@
 # Tailor + VueJS SPA demo
 
-Ispired by [React implementation](https://github.com/tsnolan23/tailor-react-spa)
+Inspired by [React implementation](https://github.com/tsnolan23/tailor-react-spa).
 
 This repository is an example application using the [Mosaic frontend microservices architecture](https://mosaic9.org).
 
@@ -12,7 +12,7 @@ Since the idea is that a separate team would be in charge of each of the fragmen
 
 Tailor is a layout service. It is able to parse HTML templates and replace `<fragment>` tags for their respective bundles.
 
-Tailor also injects a RequireJS bundle to your template so you're able to use Webpack Externals to share dependencies across fragments (such as `vue`).
+Tailor also injects a RequireJS bundle into your template so you're able to use Webpack Externals to share dependencies across fragments (such as `vue`).
 
 ## Fragments
 
