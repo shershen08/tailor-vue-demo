@@ -1,5 +1,7 @@
 # Tailor + VueJS SPA demo
 
+![frontend microservices](https://github.com/shershen08/tailor-vue-demo/raw/master/vue-tailor-logo.jpg "VueJS + Taylor")
+
 Inspired by [React implementation](https://github.com/tsnolan23/tailor-react-spa).
 
 This repository is an example application using the [Mosaic frontend microservices architecture](https://mosaic9.org).
