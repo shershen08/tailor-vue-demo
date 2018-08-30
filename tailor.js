@@ -18,6 +18,6 @@ http
 
     tailor.requestHandler(req, res)
   })
-  .listen(8080, function() {
+  .listen(8089, function() {
     console.log('Tailor server listening on port 8080')
   })
