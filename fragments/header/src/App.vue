@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="vue-header-app">
+    <img src="./assets/logo.png" class="app-logo">
     <Header/>
   </div>
 </template>
@@ -17,12 +17,17 @@ export default {
 </script>
 
 <style>
-#app {
+#vue-header-app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  height: 100px;
   color: #2c3e50;
-  margin-top: 60px;
+  background:  #fff;
+}
+.app-logo {
+  width: 100px;
+  float: left;
 }
 </style>
