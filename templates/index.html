@@ -8,16 +8,23 @@
 <body>
   <!-- header -->
   <div id="header">
-    <span class="fragment-error">Fragment failed to load</span>
+    <span class="fragment-error">Header failed to load</span>
   </div>
   <fragment src="http://localhost:8091"></fragment>
 
 
   <!-- dashboard -->
   <div id="dashboard">
-      <span class="fragment-error">Fragment failed to load</span>
+      <span class="fragment-error">Dashboard failed to load</span>
     </div>
-  <fragment src="http://localhost:8000"></fragment>
+  <fragment src="http://localhost:8090" primary></fragment>
+
+
+  <!-- twitter feed -->
+  <div id="dashboard">
+      <span class="fragment-error">Twitter feed failed to load</span>
+    </div>
+  <fragment src="http://localhost:8092" timeout=1000></fragment>
 
 </body>
 </html>

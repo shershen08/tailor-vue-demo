@@ -17,20 +17,20 @@ http
     }
 
     if (req.url === '/commons/style.css') {
-
       fs.readFile(__dirname + '/commons/style.css', (err, data) => {
-        if (err) console.log(err);
-        res.writeHead(200, {'Content-Type': 'text/css'});
-        res.write(data);
-        res.end('');
-      });
+        if (err) console.log(err)
+        res.writeHead(200, { 'Content-Type': 'text/css' })
+        res.write(data)
+        res.end('')
+      })
 
+    } else {
+
+      req.headers['x-request-uri'] = req.url
+      req.url = '/index'
+
+      tailor.requestHandler(req, res)
     }
-
-    req.headers['x-request-uri'] = req.url
-    req.url = '/index'
-
-    tailor.requestHandler(req, res)
   })
   .listen(PORT, function() {
     console.log(`Tailor server listening on port ${8089}`)
