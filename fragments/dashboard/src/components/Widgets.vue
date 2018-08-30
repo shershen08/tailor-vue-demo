@@ -3,14 +3,10 @@
     <h2>Essential Links</h2>
     <ul>
       <li>
-        <router-link :to="`{ name: 'start'}`">Start page</router-link>
-        <router-link to="/">Start page1</router-link>
-        <a href="/">Item</a>
+        <router-link to="/">Start page</router-link>
       </li>
       <li>
-        <router-link to="/item">Item1</router-link>
         <router-link :to="{ name: 'item'}">Item</router-link>
-        <a href="item">Item</a>
       </li>
     </ul>
   </div>
