@@ -3,16 +3,21 @@
 <head>
   <title>Tailor + VueJS Example Application</title>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <style>
-    body {
-      background: #ECEFF4;
-    }
-  </style>
+  <link rel="stylesheet" href="./commons/style.css" />
 </head>
 <body>
-  <div id="header"></div>
-  <div id="dashboard"></div>
+  <!-- header -->
+  <div id="header">
+    <span class="fragment-error">Fragment failed to load</span>
+  </div>
   <fragment src="http://localhost:8091"></fragment>
-  <fragment src="http://localhost:8090"></fragment>
+
+
+  <!-- dashboard -->
+  <div id="dashboard">
+      <span class="fragment-error">Fragment failed to load</span>
+    </div>
+  <fragment src="http://localhost:8000"></fragment>
+
 </body>
 </html>
