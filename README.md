@@ -31,10 +31,6 @@ This app consists basically in a couple of fragments:
 
 Each fragment contains it's own `webpack.config.js` that specifies how to build it.
 
-## Sharing dependencies with `fragment-common`
-
-TODO
-
 ## `fragments/*`
 
 All the other fragments are parts of this application.
@@ -45,23 +41,44 @@ All of them are built using `amd` as a `libraryTarget` in their Webpack configur
 
 The dependency management is handled with RequireJS on runtime.
 
-## Setting up
+## How to
+
+### Setting up
 
 1. Clone this repository
 1. Install all of the base dependencies with `npm install`
 1. Install all of the fragment dependencies with `npm run install-fragment-dependencies`
 1. Build the fragments with `npm run build-fragments`
 
-## Running
+### Running
 
 1. In one terminal, start the fragments servers with `npm run start-fragments` - then you'll have header anf dashboard running on 8090 and 8091 localhost ports respectively.
 1. In another terminal, start the Tailor service with `npm start`
-1. Navigate to `http://localhost:8080`
+1. Navigate to `http://localhost:8089`
 
-## Running in development mode
+### Running in development mode
 
 1. In one terminal, start the fragments watchers with `npm run watch-fragments`
 1. In another terminal, start the fragments servers with `npm run start-fragments`
 1. In another terminal, start the Tailor service with `npm start`
-1. Navigate to `http://localhost:8080`
+1. Navigate to `http://localhost:8089`
 
+## Needed features
+
+### Sharing dependencies with `fragment-common`
+
+TODO
+
+### Sharing styles
+
+TODO
+
+### Some way to exchange data: state or message bus
+
+TODO
+
+## Ideas and contributions
+
+It's ongoing experiment. I believe that it could be a usefull POC for teams and individual developers who are using VueJs for their frontend and want to achieve more flexbility that microservices phiosophy gives.
+
+Ping me on twiter [@legkoletat](https://twitter.com/legkoletat) or create a PR.
