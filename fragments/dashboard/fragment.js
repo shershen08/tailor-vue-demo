@@ -3,10 +3,17 @@ const url = require('url')
 const fs = require('fs')
 
 const PORT = 8090
-
+const ASSETS_PATH = '/assets/'
+ 
 const server = http.createServer((req, res) => {
   const pathname = url.parse(req.url).pathname
   const jsHeader = { 'Content-Type': 'application/javascript' }
+
+  if (pathname.startsWith(ASSETS_PATH)) {
+    res.writeHead(200)
+    return fs.createReadStream('./public' + pathname).pipe(res)
+  }
+
   switch(pathname) {
     case '/public/bundle.js':
       res.writeHead(200, jsHeader)
