@@ -81,4 +81,4 @@ TODO
 
 It's ongoing experiment. I believe that it could be a usefull POC for teams and individual developers who are using VueJs for their frontend and want to achieve more flexbility that microservices phiosophy gives.
 
-Ping me on twiter [@legkoletat](https://twitter.com/legkoletat) or create a PR.
+Ping me on twiter [@shershen08](https://twitter.com/shershen08) or create a PR.
